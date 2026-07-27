@@ -1,58 +1,663 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Ana Diwedi — digital product, AI/GenAI and customer experience portfolio.">
-<title>Ana Diwedi | Product & AI</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Diwedi | AI Product Manager & Digital Platforms</title>
+  <meta name="description" content="Personal portfolio of Ana Diwedi - AI Product Manager with 6+ years of experience across B2B platforms in Banking, Telecom, and Insurance.">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ana Diwedi | AI Product Manager & Digital Platforms">
+  <meta property="og:description" content="AI Product Manager driving digital transformation across B2B platforms, AI/GenAI, Banking, Telecom & Customer Experience.">
+  <meta property="og:image" content="assets/images/ana_diwedi_portrait.jpg">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-<header class="site-header">
-  <a href="#home" class="brand">ANA DIWEDI</a>
-  <nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#contact">Contact</a></nav>
-</header>
-<main>
-<section id="home" class="hero">
-  <div class="eyebrow">DIGITAL PRODUCTS · AI/GENAI · CUSTOMER EXPERIENCE</div>
-  <h1>Hi, I’m Ana.<br><span>I turn complex problems into products people can use.</span></h1>
-  <p class="lead">6+ years shaping digital experiences across banking, insurance and telecom — combining customer insight, data, technology and business thinking to create meaningful outcomes.</p>
-  <div class="actions"><a class="primary" href="#work">Explore my work ↗</a><a class="secondary" href="#about">More about me</a></div>
-  <div class="stats"><div><strong>6+</strong><span>Years across digital products</span></div><div><strong>44 → 60</strong><span>CIB NPS improvement</span></div><div><strong>+10%</strong><span>Take-rate uplift</span></div><div><strong>AI + GenAI</strong><span>Emerging product experiences</span></div></div>
-</section>
 
-<section id="about" class="two">
-  <div><div class="eyebrow">ABOUT</div><h2>Customer-first thinking.<br>Outcome-led execution.</h2></div>
-  <div class="copy"><p>I work where customer experience, product strategy and technology meet. My experience spans enterprise banking, mobile-first commerce, AI-enabled experiences and growth journeys.</p><p>I like starting with the problem behind the metric: understanding user friction, forming hypotheses, aligning teams around trade-offs and translating strategy into experiences that can be shipped and measured.</p><div class="chips"><span>Product Strategy</span><span>AI / GenAI</span><span>Digital Transformation</span><span>Customer Experience</span><span>Product Analytics</span></div></div>
-</section>
+  <!-- ==========================================
+       1. GLASS NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <img src="assets/images/ana_diwedi_portrait.jpg" alt="Ana Diwedi Profile" class="nav-avatar">
+        <span class="gradient-text">Ana Diwedi</span>
+      </div>
 
-<section id="experience">
-  <div class="eyebrow">EXPERIENCE</div><h2>A career built around customer problems.</h2>
-  <div class="timeline">
-    <article><time>2024 — 2025</time><div><h3>Verizon</h3><h4>Product Manager · Digital Commerce</h4><p>Worked across digital commerce and customer journeys, including BYOD and accessories experiences. Used root-cause analysis to identify friction and contributed to a <b>10% improvement in take rate</b>.</p></div></article>
-    <article><time>2024</time><div><h3>Bajaj Allianz Life Insurance</h3><h4>Product Manager · Digital Products</h4><p>Contributed to digital product initiatives across customer needs, business requirements and execution.</p></div></article>
-    <article><time>2020 — 2024</time><div><h3>ICICI Bank</h3><h4>Product Manager · Corporate Digital Banking</h4><p>Led customer-experience initiatives across Corporate Internet Banking, authentication, approvals and CRM. Improved CIB NPS from <b>44 to 60</b> through targeted CX interventions.</p></div></article>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#pillars">About & Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Work & Case Studies</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Switch Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.88rem;">
+          <span>Resume</span> 📄
+        </a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         2. HERO SECTION
+         ========================================== -->
+    <section id="home" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for Product Manager, Senior PM & AI Product Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Ana Diwedi</span>.<br>
+              AI & Digital Product Manager.
+            </h1>
+
+            <p class="hero-description">
+              AI Product Manager with <strong>6+ years of experience</strong> driving digital transformation across B2B platforms in 
+              <strong>Banking</strong>, <strong>Telecom</strong>, and <strong>Insurance</strong>. Proven track record of leveraging 
+              AI/LLM technologies, data analytics, and customer insights to build impactful products and deliver measurable CX gains.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Case Studies</span> 🚀
+              </a>
+              <a href="#experience" class="btn btn-secondary">
+                <span>View Career History</span> 💼
+              </a>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>View Resume (PDF)</span> 📄
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number gradient-text">6+ Yrs</span>
+                <span class="stat-label">Product Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number gradient-text">+20%</span>
+                <span class="stat-label">Digital Adoption Gain</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number gradient-text">44 → 60</span>
+                <span class="stat-label">NPS Score Lift</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number gradient-text">+10%</span>
+                <span class="stat-label">Service Take Rate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Frame with Portrait -->
+          <div class="hero-visual">
+            <div class="portrait-wrapper">
+              <img src="assets/images/ana_diwedi_portrait.jpg" alt="Ana Diwedi Portrait" class="portrait-img">
+              
+              <div class="floating-badge badge-top-left">
+                <span>✨ AI & B2B Platforms</span>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <span>⚡ Verizon | ICICI Bank | Bajaj Allianz</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ABOUT & STRATEGIC PILLARS SECTION
+         ========================================== -->
+    <section id="pillars" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Expertise</span>
+          <h2 class="section-title">Key Pillars of My Product Practice</h2>
+          <p class="section-subtitle">Combining customer insights, data analytics, and technical execution across enterprise platforms.</p>
+        </div>
+
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">🤖</div>
+            <h3 class="pillar-title">AI & GenAI Product Roadmap</h3>
+            <p class="pillar-desc">Defining AI product strategy, evaluating Generative AI/LLM use cases (e.g. Vertex AI), and translating business priorities into high-value product initiatives.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🏦</div>
+            <h3 class="pillar-title">Corporate Digital Banking</h3>
+            <p class="pillar-desc">Managing platform solutions for Corporate & Investment Banking (CIB) clients across Mobile and Web banking, transaction approvals, and treasury workflows.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">📡</div>
+            <h3 class="pillar-title">Telecom & B2B Platforms</h3>
+            <p class="pillar-desc">Simplifying customer journeys across Verizon B2B platforms, driving app adoption, optimizing BYOD onboarding, and enhancing service plan performance.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3 class="pillar-title">Digital Transformation & CRM</h3>
+            <p class="pillar-desc">Overhauling CRM interfaces for field productivity, maintaining database quality, and managing third-party system integrations.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🎯</div>
+            <h3 class="pillar-title">Voice of Customer & CX Analytics</h3>
+            <p class="pillar-desc">Leveraging Medallia, Quantum Metric, Adobe Analytics, and VOC inputs to identify customer friction and elevate Net Promoter Scores (NPS).</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">📊</div>
+            <h3 class="pillar-title">Agile Execution & Analytics</h3>
+            <p class="pillar-desc">Prioritizing product backlogs, leading UAT and release management, defining success KPIs, and collaborating with cross-functional global teams.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. EXPERIENCE TIMELINE
+         ========================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Verified track record across leading Telecom, Insurance, and Corporate Banking platforms.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Product Manager</h3>
+                  <span class="company-name">Verizon | Hyderabad</span>
+                </div>
+                <span class="timeline-date">Nov 2024 – Dec 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Led AI-driven digital adoption initiatives to simplify customer journeys and reduce friction across B2B platforms.</li>
+                <li>Defined AI Product Roadmap for Gen AI initiatives delivering measurable business impact: cost reduction, productivity gains, and reduced story points.</li>
+                <li>Leveraged Medallia, Quantum Metrics, and qualitative inputs to identify pain points and convert them into strategic product initiatives.</li>
+                <li>Drove customer adoption strategy for the new Verizon app, nudging users from web portal to app to increase engagement.</li>
+                <li>Diagnosed a drop in flagship mobile service plan performance through data-driven root cause analysis, resulting in a 10% take rate increase.</li>
+                <li>Managed end-to-end product delivery, prioritizing backlog balancing business impact, customer value, effort, and technical feasibility.</li>
+                <li>Defined KPIs and measured product success using Adobe Analytics and Tableau while partnering with US stakeholders and cross-functional global teams.</li>
+              </ul>
+              <div class="tag-container">
+                <span class="tech-tag">Verizon B2B</span>
+                <span class="tech-tag">GenAI Roadmap</span>
+                <span class="tech-tag">Adobe Analytics</span>
+                <span class="tech-tag">Quantum Metric</span>
+                <span class="tech-tag">Medallia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Product Manager</h3>
+                  <span class="company-name">Bajaj Allianz Life Insurance | Pune</span>
+                </div>
+                <span class="timeline-date">Apr 2024 – Aug 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Led adoption of a mobile CRM interface enabling real-time field access and improving sales team productivity.</li>
+                <li>Oversaw CRM database maintenance initiatives, reducing data-related customer issues by 10%.</li>
+                <li>Partnered with IT and engineering teams to define solution approaches, support UAT, and deliver system enhancements.</li>
+                <li>Coordinated integrations with third-party applications ensuring seamless system interoperability across internal workflows.</li>
+                <li>Received, analyzed, and prioritized CRM-related requests from internal stakeholders for timely delivery.</li>
+              </ul>
+              <div class="tag-container">
+                <span class="tech-tag">Mobile CRM</span>
+                <span class="tech-tag">System Integrations</span>
+                <span class="tech-tag">UAT & Quality</span>
+                <span class="tech-tag">Field Productivity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Product Manager</h3>
+                  <span class="company-name">ICICI Bank | Mumbai</span>
+                </div>
+                <span class="timeline-date">Jun 2021 – Apr 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Led platform product management for Mobile and Web Banking solutions supporting Corporate & Investment Banking (CIB) customers.</li>
+                <li>Drove NPS improvement from 44 to 60 on two separate occasions by solving distinct customer experience challenges.</li>
+                <li>Implemented Next Best Action (NBA) strategies to enhance personalization, boosting customer satisfaction by 15%.</li>
+                <li>Led UI/UX and business-focused initiatives improving usability, performance, and customer experience across banking platforms.</li>
+                <li>Engaged directly with customers and customer-facing teams to validate new product opportunities and solution hypotheses.</li>
+                <li>Captured Voice of Customer (VOC) inputs and translated requirements into actionable product features and backlog items.</li>
+                <li>Managed UAT and staging activities, ensuring readiness for production releases.</li>
+              </ul>
+              <div class="tag-container">
+                <span class="tech-tag">Corporate Banking (CIB)</span>
+                <span class="tech-tag">Mobile & Web Banking</span>
+                <span class="tech-tag">Next Best Action</span>
+                <span class="tech-tag">NPS Optimization</span>
+                <span class="tech-tag">Voice of Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Business Development & Marketing Intern</h3>
+                  <span class="company-name">NIVEA India | Pune</span>
+                </div>
+                <span class="timeline-date">2020 – 2021</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Managed sales and marketing initiatives for NIVEA products, driving brand visibility and market penetration.</li>
+                <li>Achieved a 4% sales conversion rate through targeted outreach and relationship-driven selling.</li>
+                <li>Presented company offerings to potential retail clients, communicating product value propositions effectively.</li>
+              </ul>
+              <div class="tag-container">
+                <span class="tech-tag">Sales & Conversion</span>
+                <span class="tech-tag">Market Outreach</span>
+                <span class="tech-tag">Value Proposition</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. FEATURED PROJECTS & CASE STUDIES SHOWCASE
+         ========================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title">Executive Product Stories</h2>
+          <p class="section-subtitle">Structured executive case studies (Context → Problem → My Role → Insight → Strategy → Solution → Execution → Impact → Learnings).</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & GenAI</button>
+          <button class="filter-btn" data-filter="banking">Digital Banking</button>
+          <button class="filter-btn" data-filter="telecom">Telecom</button>
+          <button class="filter-btn" data-filter="transformation">Digital Transformation</button>
+          <button class="filter-btn" data-filter="cx">CX Innovation</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- FLAGSHIP CASE STUDY 1: AI Agentic Commerce -->
+          <div class="project-card" data-categories="ai telecom" onclick="openCaseStudyModal('ai-agentic-commerce')" style="border-color: rgba(99, 102, 241, 0.6); box-shadow: var(--shadow-glow);">
+            <div class="project-banner" style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);">
+              <span class="project-category-badge" style="background: #ffffff; color: #4f46e5; font-weight: 800;">⭐ FLAGSHIP CASE STUDY</span>
+              <span class="project-metric-badge">+20% Engagement</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" style="font-size: 1.45rem;">AI Agentic Commerce</h3>
+              <p class="project-summary">AI-driven digital adoption and conversational guidance across Verizon B2B platforms, simplifying complex enterprise purchasing journeys.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag" style="border-color: var(--accent-primary); color: var(--accent-primary);">Verizon B2B</span>
+                  <span class="tech-tag">AI Adoption</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FLAGSHIP CASE STUDY 2: Corporate Digital Banking -->
+          <div class="project-card" data-categories="banking transformation" onclick="openCaseStudyModal('corporate-banking')" style="border-color: rgba(2, 132, 199, 0.6); box-shadow: var(--shadow-glow);">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);">
+              <span class="project-category-badge" style="background: #ffffff; color: #0284c7; font-weight: 800;">⭐ FLAGSHIP CASE STUDY</span>
+              <span class="project-metric-badge">NPS 44 → 60</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" style="font-size: 1.45rem;">Corporate Digital Banking</h3>
+              <p class="project-summary">Platform product management for ICICI Bank Mobile and Web Banking supporting Corporate & Investment Banking (CIB) clients.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag" style="border-color: #0284c7; color: #0284c7;">ICICI Bank</span>
+                  <span class="tech-tag">CIB Mobile/Web</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FLAGSHIP CASE STUDY 3: Authentication & Approval Transformation -->
+          <div class="project-card" data-categories="banking transformation cx" onclick="openCaseStudyModal('auth-approval')" style="border-color: rgba(16, 185, 129, 0.6); box-shadow: var(--shadow-glow);">
+            <div class="project-banner" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+              <span class="project-category-badge" style="background: #ffffff; color: #059669; font-weight: 800;">⭐ FLAGSHIP CASE STUDY</span>
+              <span class="project-metric-badge">+15% CSAT via NBA</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" style="font-size: 1.45rem;">Authentication & Approval Transformation</h3>
+              <p class="project-summary">Streamlined multi-factor authorization and transaction approval matrices for Corporate & Investment Banking customers.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag" style="border-color: #10b981; color: #10b981;">ICICI Bank</span>
+                  <span class="tech-tag">Security & UX</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: BYOD Commerce Experience -->
+          <div class="project-card" data-categories="telecom cx" onclick="openCaseStudyModal('byod-commerce')">
+            <div class="project-banner" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+              <span class="project-category-badge">Telecom & CX</span>
+              <span class="project-metric-badge">+10% Take Rate</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BYOD Commerce Experience</h3>
+              <p class="project-summary">Root cause analysis and redesign of Bring Your Own Device onboarding and mobile plan selection for Verizon B2B users.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag">Verizon</span>
+                  <span class="tech-tag">BYOD Journey</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Accessories Upsell & Compatibility Experience -->
+          <div class="project-card" data-categories="telecom cx" onclick="openCaseStudyModal('accessories-upsell')">
+            <div class="project-banner" style="background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);">
+              <span class="project-category-badge">Telecom & Commerce</span>
+              <span class="project-metric-badge">Contextual Recommendations</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Accessories Upsell & Compatibility Experience</h3>
+              <p class="project-summary">Next Best Action (NBA) device accessory compatibility engine reducing return rates and boosting enterprise checkout confidence.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag">Verizon B2B</span>
+                  <span class="tech-tag">NBA Upsell</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Vertex AI Assistant -->
+          <div class="project-card" data-categories="ai transformation" onclick="openCaseStudyModal('vertex-ai-assistant')">
+            <div class="project-banner" style="background: linear-gradient(135deg, #475569 0%, #0f172a 100%);">
+              <span class="project-category-badge">AI & GenAI Strategy</span>
+              <span class="project-metric-badge">GenAI Roadmap</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Vertex AI Assistant</h3>
+              <p class="project-summary">Defined GenAI product roadmap utilizing Google Cloud Vertex AI to drive enterprise productivity gains and cost reduction.</p>
+              <div class="project-footer">
+                <div class="tag-container" style="margin-top:0;">
+                  <span class="tech-tag">Verizon</span>
+                  <span class="tech-tag">Vertex AI</span>
+                </div>
+                <span class="case-study-link">Read Executive Story →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. SKILLS & COMPETENCIES MATRIX
+         ========================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Skills & Competencies</span>
+          <h2 class="section-title">Verified Core Competencies</h2>
+          <p class="section-subtitle">Technical skills, product management tools, and domain expertise from resume.</p>
+        </div>
+
+        <div class="skills-tabs">
+          <button class="skills-tab-btn active" data-skill-target="all">All Skills</button>
+          <button class="skills-tab-btn" data-skill-target="product">AI & Product Management</button>
+          <button class="skills-tab-btn" data-skill-target="analytics">Analytics & Execution</button>
+          <button class="skills-tab-btn" data-skill-target="domain">Domain Knowledge</button>
+        </div>
+
+        <div class="skills-grid">
+          
+          <div class="skills-category-group" data-category="product">
+            <div class="skill-card">
+              <span class="skill-icon">🤖</span>
+              <div>
+                <div class="skill-name">Generative AI & LLMs</div>
+                <span class="skill-level">Google Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="product">
+            <div class="skill-card">
+              <span class="skill-icon">🎯</span>
+              <div>
+                <div class="skill-name">AI Product Management</div>
+                <span class="skill-level">Core Strength</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="product">
+            <div class="skill-card">
+              <span class="skill-icon">💡</span>
+              <div>
+                <div class="skill-name">MVP Definition & Roadmap Strategy</div>
+                <span class="skill-level">Core Strength</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="analytics">
+            <div class="skill-card">
+              <span class="skill-icon">📈</span>
+              <div>
+                <div class="skill-name">Adobe Analytics & Tableau</div>
+                <span class="skill-level">Data & Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="analytics">
+            <div class="skill-card">
+              <span class="skill-icon">📊</span>
+              <div>
+                <div class="skill-name">Quantum Metric & Medallia</div>
+                <span class="skill-level">CX Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="analytics">
+            <div class="skill-card">
+              <span class="skill-icon">⚡</span>
+              <div>
+                <div class="skill-name">Agile-Scrum, Jira & SDLC</div>
+                <span class="skill-level">Execution & Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="domain">
+            <div class="skill-card">
+              <span class="skill-icon">🏦</span>
+              <div>
+                <div class="skill-name">B2B Corporate Banking (CIB)</div>
+                <span class="skill-level">Domain Expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-group" data-category="domain">
+            <div class="skill-card">
+              <span class="skill-icon">📡</span>
+              <div>
+                <div class="skill-name">Telecom & B2B Platforms</div>
+                <span class="skill-level">Domain Expertise</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. CENTERED CONTACT & CONNECT SECTION
+         ========================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Interested in discussing Product Manager, Senior PM, or AI Product opportunities? Reach out directly.</p>
+        </div>
+
+        <div class="contact-centered-wrapper">
+          <div class="contact-card-centered">
+            
+            <div class="contact-card-header">
+              <h3 class="contact-card-title">Contact Information</h3>
+              <p class="contact-card-sub">Hyderabad, India &nbsp;|&nbsp; Open to global remote & relocation opportunities</p>
+            </div>
+
+            <div class="contact-info-grid">
+              
+              <a href="mailto:anamassey2016@gmail.com" class="contact-info-item">
+                <div class="contact-info-icon">📧</div>
+                <div class="contact-info-text">
+                  <div class="contact-info-label">EMAIL</div>
+                  <div class="contact-info-val">anamassey2016@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/anadiwedi" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                <div class="contact-info-icon">💼</div>
+                <div class="contact-info-text">
+                  <div class="contact-info-label">LINKEDIN</div>
+                  <div class="contact-info-val">linkedin.com/in/anadiwedi</div>
+                </div>
+              </a>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📱</div>
+                <div class="contact-info-text">
+                  <div class="contact-info-label">PHONE</div>
+                  <div class="contact-info-val">+91 9621014311</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contact-action-box">
+              <a href="assets/resume.pdf" download="Ana_Diwedi_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large-download">
+                <span>Download Resume (PDF)</span> 📄
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       8. CASE STUDY MODAL DIALOG
+       ========================================== -->
+  <div class="modal-overlay" id="caseStudyModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="modalContentArea">
+        <!-- Dynamic Case Study Content Injected by modal.js -->
+      </div>
+    </div>
   </div>
-</section>
 
-<section id="work">
-  <div class="section-head"><div><div class="eyebrow">SELECTED WORK</div><h2>Projects & case studies.</h2></div><p>How I frame problems, make product decisions and connect customer needs with business outcomes.</p></div>
-  <div class="projects">
-    <a class="project hero-project" href="case-studies/ai-agentic-commerce.html"><span>01 · AI / GENAI</span><h3>AI Agentic<br>Commerce</h3><p>Reimagining commerce from search-and-filter toward goal-driven, conversational assistance.</p><b>Explore case study →</b></a>
-    <a class="project" href="case-studies/vertex-ai-assistant.html"><span>02 · CONVERSATIONAL AI</span><h3>Vertex AI Assistant</h3><p>Intent understanding, customer resolution and thoughtful human handoff.</p><b>Explore →</b></a>
-    <a class="project" href="case-studies/corporate-digital-banking.html"><span>03 · BFSI</span><h3>Corporate Digital Banking</h3><p>Improving complex, high-value enterprise banking journeys and customer experience.</p><b>Explore →</b></a>
-    <a class="project" href="case-studies/authentication-transformation.html"><span>04 · SECURITY + CX</span><h3>Authentication Transformation</h3><p>Reducing approval friction while balancing risk, security and compliance.</p><b>Explore →</b></a>
-    <a class="project" href="case-studies/byod-commerce.html"><span>05 · TELECOM</span><h3>BYOD Commerce</h3><p>Simplifying device validation and progression through a mobile-first commerce journey.</p><b>Explore →</b></a>
-    <a class="project" href="case-studies/accessories-upsell.html"><span>06 · GROWTH</span><h3>Accessories Upsell</h3><p>Compatibility-led recommendations and contextual cross-sell opportunities.</p><b>Explore →</b></a>
-  </div>
-</section>
+  <!-- ==========================================
+       9. FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="nav-brand">
+        <span class="gradient-text">Ana Diwedi</span>
+      </div>
 
-<section id="capabilities" class="two">
-  <div><div class="eyebrow">CAPABILITIES</div><h2>From discovery to measurable outcomes.</h2></div>
-  <div class="cap-list"><p><b>01 Product Strategy</b><span>Vision · Roadmaps · Prioritisation · MVP · Discovery</span></p><p><b>02 Customer Experience</b><span>Journey analysis · Design thinking · Funnel diagnosis</span></p><p><b>03 Data & Growth</b><span>Adoption · Engagement · Retention · Root-cause analysis</span></p><p><b>04 Execution</b><span>User stories · UAT · Backlog · Cross-functional alignment</span></p><p><b>05 AI Product Thinking</b><span>GenAI · Conversational AI · Agentic experiences · Responsible AI</span></p></div>
-</section>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pillars">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-<section id="contact" class="contact"><div class="eyebrow">LET’S CONNECT</div><h2>Let’s build products<br>that make complexity feel simple.</h2><p>Interested in conversations around digital products, AI/GenAI, transformation and customer experience.</p><a href="#home">Back to top ↑</a></section>
-</main>
-<footer><b>Ana Diwedi</b><span>Digital Products · AI/GenAI · Customer Experience</span><span>India</span></footer>
-</body></html>
+      <p class="footer-copy">
+        © 2026 Ana Diwedi. AI & Digital Product Manager.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/modal.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
